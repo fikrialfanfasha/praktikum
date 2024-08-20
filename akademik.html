@@ -5,21 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akademik</title>
     <style>
-      body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333}.header{background-color:#0073e6;color:#fff;padding:20px 0;text-align:center}.header .logo img{width:150px}.menu{background-color:#005bb5}.menu ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center}.menu ul li{margin:0 10px}.menu ul li a{color:#fff;text-decoration:none;font-weight:bold;padding:10px 20px;display:block;transition:background-color .3s ease}.menu ul li a:hover{background-color:#003f7f;border-radius:5px}.content{padding:40px;background-color:#fff;margin:20px auto;width:80%;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1)}.content h2{color:#0073e6}table{width:100%;border-collapse:collapse}table,th,td{border:1px solid #ddd}th,td{padding:10px;text-align:center}th{background-color:#0073e6;color:#fff}.footer{background-color:#333;color:#fff;text-align:center;padding:10px 0;margin-top:50px;border-radius:0 0 8px 8px}
+      body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333}.header{background-color:#0073e6;color:#fff;padding:20px;text-align:center}.header .logo img{width:120px;border-radius:8px}.menu{background-color:#005bb5}.menu ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center;background:#004494}.menu ul li{margin:0 10px}.menu ul li a{color:#fff;text-decoration:none;font-weight:bold;padding:12px 20px;display:block;border-radius:5px}.menu ul li a:hover{background-color:#003f7f}.content{padding:30px;background-color:#fff;margin:20px auto;max-width:900px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1)}.content h2{color:#0073e6;border-bottom:2px solid #0073e6;padding-bottom:10px;margin-bottom:20px}.content .info{display:flex;justify-content:space-between;margin-bottom:20px}.info div{background-color:#e9ecef;padding:15px;border-radius:8px;width:48%}.info div h3{margin-top:0;color:#0073e6}table{width:100%;border-collapse:collapse;margin:20px 0;background-color:#f9f9f9}th,td{padding:10px;text-align:left;border:1px solid #ddd}th{background-color:#0073e6;color:#fff}tr:hover{background-color:#f1f1f1}.footer{background-color:#333;color:#fff;text-align:center;padding:15px 0;margin-top:30px;border-radius:8px 8px 0 0}
     </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", function(){
-        var elements = document.querySelectorAll('.menu ul li a, .content h2, table, .footer');
-        elements.forEach(function(el){
-          el.style.display = 'none';
-        });
-        setTimeout(function(){
-          elements.forEach(function(el){
-            el.style.display = 'block';
-          });
-        }, 100);
-      });
-    </script>
   </head>
   <body>
     <div class="header">
@@ -39,6 +26,16 @@
     </div>
     <div class="content">
       <h2>Program Akademik RPL</h2>
+      <div class="info">
+        <div>
+          <h3>Deskripsi Program</h3>
+          <p>Program Akademik RPL dirancang untuk memberikan pengetahuan dan keterampilan yang diperlukan dalam bidang Rekayasa Perangkat Lunak. Kami memiliki kurikulum yang mencakup berbagai aspek penting dalam pengembangan perangkat lunak.</p>
+        </div>
+        <div>
+          <h3>Jadwal Kelas</h3>
+          <p>Kelas diatur secara mingguan dengan berbagai topik dari pemrograman dasar hingga teknik lanjutan. Pastikan Anda memeriksa jadwal secara berkala untuk mengikuti perkembangan terbaru dalam program kami.</p>
+        </div>
+      </div>
       <table>
         <thead>
           <tr>
