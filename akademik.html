@@ -5,96 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akademik</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-      }
-
-      .header {
-        background-color: #0073e6;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-      }
-
-      .header .logo img {
-        width: 150px;
-      }
-
-      .menu {
-        background-color: #005bb5;
-      }
-
-      .menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      .menu ul li {
-        margin: 0 10px;
-      }
-
-      .menu ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 10px 20px;
-        display: block;
-        transition: background-color 0.3s ease;
-      }
-
-      .menu ul li a:hover {
-        background-color: #003f7f;
-        border-radius: 5px;
-      }
-
-      .content {
-        padding: 40px;
-        background-color: white;
-        margin: 20px auto;
-        width: 80%;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .content h2 {
-        color: #0073e6;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      table, th, td {
-        border: 1px solid #ddd;
-      }
-
-      th, td {
-        padding: 10px;
-        text-align: center;
-      }
-
-      th {
-        background-color: #0073e6;
-        color: white;
-      }
-
-      .footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-        margin-top: 50px;
-        border-radius: 0 0 8px 8px;
-      }
+      body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333}.header{background-color:#0073e6;color:#fff;padding:20px 0;text-align:center}.header .logo img{width:150px}.menu{background-color:#005bb5}.menu ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center}.menu ul li{margin:0 10px}.menu ul li a{color:#fff;text-decoration:none;font-weight:bold;padding:10px 20px;display:block;transition:background-color .3s ease}.menu ul li a:hover{background-color:#003f7f;border-radius:5px}.content{padding:40px;background-color:#fff;margin:20px auto;width:80%;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1)}.content h2{color:#0073e6}table{width:100%;border-collapse:collapse}table,th,td{border:1px solid #ddd}th,td{padding:10px;text-align:center}th{background-color:#0073e6;color:#fff}.footer{background-color:#333;color:#fff;text-align:center;padding:10px 0;margin-top:50px;border-radius:0 0 8px 8px}
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        var elements = document.querySelectorAll('.menu ul li a, .content h2, table, .footer');
+        elements.forEach(function(el){
+          el.style.display = 'none';
+        });
+        setTimeout(function(){
+          elements.forEach(function(el){
+            el.style.display = 'block';
+          });
+        }, 100);
+      });
+    </script>
   </head>
   <body>
     <div class="header">
@@ -119,19 +44,16 @@
           <tr>
             <th>Kelas</th>
             <th>Mata Pelajaran</th>
-            
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
             <td>Matematika</td>
-            
           </tr>
           <tr>
             <td>2</td>
             <td>Bahasa Inggris</td>
-         
           </tr>
           <tr>
             <td>3</td>

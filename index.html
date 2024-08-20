@@ -3,55 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beranda</title>
+    <title>Home</title>
     <style>
-      body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333}.header{background-color:#0073e6;color:#fff;padding:20px 0;text-align:center}.header .logo img{width:150px}.menu{background-color:#005bb5}.menu ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center}.menu ul li{margin:0 10px}.menu ul li a{color:#fff;text-decoration:none;font-weight:bold;padding:10px 20px;display:block;transition:background-color .3s ease}.menu ul li a:hover{background-color:#003f7f;border-radius:5px}.jumbotron{position:relative;width:100%;height:300px;overflow:hidden}.jumbotron img{width:100%;height:100%;object-fit:cover;display:block}.jumbotron .content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-align:center}.jumbotron h1{font-size:3em;color:black;margin:0}.jumbotron p{color:#003f7f}.content{padding:40px;text-align:center;background-color:#fff;margin-top:-20px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1)}.footer{background-color:#333;color:#fff;text-align:center;padding:10px 0;margin-top:50px;border-radius:0 0 8px 8px}
+      body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333}.a{background-color:#0073e6;color:#fff;padding:20px 0;text-align:center}.b img{width:150px}.c{background-color:#005bb5}.d{list-style:none;padding:0;margin:0;display:flex;justify-content:center}.e{margin:0 10px}.f{color:#fff;text-decoration:none;font-weight:bold;padding:10px 20px;display:block;transition:background-color .3s ease}.f:hover{background-color:#003f7f;border-radius:5px}.g{position:relative;width:100%;height:300px;overflow:hidden}.h{width:100%;height:100%;object-fit:cover;display:block}.i{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-align:center}.j{font-size:3em;color:black;margin:0}.k{color:#003f7f}.l{padding:40px;text-align:center;background-color:#fff;margin-top:-20px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1)}.m{background-color:#333;color:#fff;text-align:center;padding:10px 0;margin-top:50px;border-radius:0 0 8px 8px}
     </style>
     <script>
-      document.addEventListener("DOMContentLoaded", function(){
-        var elements = document.querySelectorAll('.menu ul li a, .jumbotron h1, .jumbotron p, .content, .footer');
-        elements.forEach(function(el){
-          el.style.display = 'none';
-        });
-        setTimeout(function(){
-          elements.forEach(function(el){
-            el.style.display = 'block';
-          });
-        }, 100);
+      document.addEventListener("DOMContentLoaded",function(){
+        var a=document.querySelectorAll('.f,.j,.k,.l,.m');
+        a.forEach(function(b){b.style.display='none'});
+        setTimeout(function(){a.forEach(function(b){b.style.display='block'})},100);
       });
     </script>
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
+    <div class="a">
+      <div class="b">
         <img src="logo.png" alt="Logo Sekolah" />
       </div>
     </div>
-    <div class="menu">
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="tentang.html">Tentang Kami</a></li>
-        <li><a href="galeri.html">Galeri</a></li>
-        <li><a href="akademik.html">Akademik</a></li>
-        <li><a href="eskul.html">Ekstrakurikuler</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
+    <div class="c">
+      <ul class="d">
+        <li class="e"><a class="f" href="index.html">Home</a></li>
+        <li class="e"><a class="f" href="about.html">About</a></li>
+        <li class="e"><a class="f" href="gallery.html">Gallery</a></li>
+        <li class="e"><a class="f" href="academics.html">Academics</a></li>
+        <li class="e"><a class="f" href="activities.html">Activities</a></li>
+        <li class="e"><a class="f" href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <div class="jumbotron">
-      <img src="img.jpg" alt="Jumbotron Image" />
-      <div class="content">
-        <h1>Selamat Datang di Sekolah Kami</h1>
-        <p>Menciptakan masa depan yang lebih baik untuk generasi mendatang.</p>
+    <div class="g">
+      <img class="h" src="img.jpg" alt="Jumbotron Image" />
+      <div class="i">
+        <h1 class="j">Welcome to Our School</h1>
+        <p class="k">Creating a better future for the next generation.</p>
       </div>
     </div>
-    <div class="content">
-      <h2>Informasi Terbaru</h2>
-      <p>
-        Selamat datang di halaman beranda sekolah kami. Di sini Anda akan menemukan berbagai informasi terbaru mengenai kegiatan sekolah, acara mendatang, dan berita penting lainnya.
-      </p>
+    <div class="l">
+      <h2>Latest Information</h2>
+      <p>Welcome to the home page of our school. Here you will find the latest information about school activities, upcoming events, and other important news.</p>
     </div>
-    <div class="footer">
-      <p>Hak Cipta © 2024. SMKN 1 MAJA.</p>
+    <div class="m">
+      <p>Copyright © 2024. SMKN 1 MAJA.</p>
     </div>
   </body>
 </html>
